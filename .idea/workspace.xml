@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316d0aa5-e240-476d-8280-415f1a71691d" name="Changes" comment="Зарегали в INSTALLED_APPS 'имя_ветки'&#10;Создал полки в models-- пример:&#10;class Product(models.Model):&#10;    name=models.CharField(max_length=50)&#10;    description=models.TextField(null=True, blank=True)&#10;    price=models.DecimalField(max_digits=10, decimal_places=2)&#10;    category=models.ForeignKey(Category,on_delete=models.CASCADE)&#10;    counts=models.PositiveIntegerField()&#10;    image=models.ImageField(upload_to='products/')&#10;    def __str__(self):&#10;        return self.name&#10;        ДЛЯ КЛАССА IMAGE НАДО ДОБАВИТЬ:&#10;        MEDIA_URL = '/media/'&#10;        MEDIA_ROOT = os.path.join(BASE_DIR, 'media')&#10;        if settings.DEBUG:    &#10;          urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)---&gt; в urls&#10;После мигрируем: (python manage.py makemigrations/python manage.py migrate)" />
+    <list default="true" id="316d0aa5-e240-476d-8280-415f1a71691d" name="Changes" comment="Зарегали в INSTALLED_APPS 'имя_ветки'&#10;Создал полки в models-- пример:&#10;class Product(models.Model):&#10;    name=models.CharField(max_length=50)&#10;    description=models.TextField(null=True, blank=True)&#10;    price=models.DecimalField(max_digits=10, decimal_places=2)&#10;    category=models.ForeignKey(Category,on_delete=models.CASCADE)&#10;    counts=models.PositiveIntegerField()&#10;    image=models.ImageField(upload_to='products/')&#10;    def __str__(self):&#10;        return self.name&#10;        ДЛЯ КЛАССА IMAGE НАДО ДОБАВИТЬ:&#10;        MEDIA_URL = '/media/'&#10;        MEDIA_ROOT = os.path.join(BASE_DIR, 'media')&#10;        if settings.DEBUG:    &#10;          urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)---&gt; в urls&#10;После мигрируем: (python manage.py makemigrations/python manage.py migrate)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Osn_vetka/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Osn_vetka/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735140763124</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Зарегали в INSTALLED_APPS 'имя_ветки'&#10;Создал полки в models-- пример:&#10;class Product(models.Model):&#10;    name=models.CharField(max_length=50)&#10;    description=models.TextField(null=True, blank=True)&#10;    price=models.DecimalField(max_digits=10, decimal_places=2)&#10;    category=models.ForeignKey(Category,on_delete=models.CASCADE)&#10;    counts=models.PositiveIntegerField()&#10;    image=models.ImageField(upload_to='products/')&#10;    def __str__(self):&#10;        return self.name&#10;        ДЛЯ КЛАССА IMAGE НАДО ДОБАВИТЬ:&#10;        MEDIA_URL = '/media/'&#10;        MEDIA_ROOT = os.path.join(BASE_DIR, 'media')&#10;        if settings.DEBUG:    &#10;          urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)---&gt; в urls&#10;После мигрируем: (python manage.py makemigrations/python manage.py migrate)">
+      <option name="closed" value="true" />
+      <created>1735140890282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735140890282</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
